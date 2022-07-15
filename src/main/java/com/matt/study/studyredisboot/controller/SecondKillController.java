@@ -67,7 +67,7 @@ public class SecondKillController {
         return uid;
     }
 
-    // 乐观锁会有很多执行失败 从而导致库存遗留的问题
+    // 乐观锁会有很多执行失败 从而导致库存遗留的问题 监视的key发生了变化就不会执行
     @GetMapping("/sk1")
     public String sk1() {
 
